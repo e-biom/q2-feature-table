@@ -6,6 +6,7 @@
 # The full license is in the file LICENSE, distributed with this software.
 # ----------------------------------------------------------------------------
 
+from ._annotate import annotate_taxonomy
 from ._normalize import rarefy, normalize
 from ._subsample_ids import subsample_ids
 from ._transform import (presence_absence, relative_frequency, transpose)
@@ -32,4 +33,4 @@ __all__ = ['rarefy', 'presence_absence', 'relative_frequency', 'transpose',
            'filter_seqs', 'subsample_ids', 'rename_ids',
            'filter_features_conditionally', 'split',
            'tabulate_feature_frequencies', 'tabulate_sample_frequencies',
-           'summarize_plus', 'normalize']
+           'summarize_plus', 'normalize', 'annotate_taxonomy']
