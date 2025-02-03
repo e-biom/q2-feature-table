@@ -277,6 +277,32 @@ plugin.methods.register_function(
 
 
 plugin.methods.register_function(
+    function=q2_feature_table.annotate_taxonomy,
+    inputs={'data': FeatureData[Taxonomy]},
+    parameters={
+        'annotations': List[Str],
+        'annotations_label': List[Str],
+    },
+    outputs={
+        'annotated_data': FeatureData[Taxonomy],
+    },
+    input_descriptions={
+        'data': 'A feature taxonomy to annotate.',
+    },
+    parameter_descriptions={
+        'annotations': 'The annotations that will be added as new columns.',
+        'annotations_label': 'The name of the new columns to add.',
+    },
+    output_descriptions={
+        'annotated_data': 'The annotated taxonomies.'
+    },
+    name="Add annotation to a feature taxonomy",
+    description="Add an annotation to a feature taxonomy.",
+    examples={}
+)
+
+
+plugin.methods.register_function(
     function=q2_feature_table.rename_ids,
     inputs={
         'table': FeatureTable[T1],
