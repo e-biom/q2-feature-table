@@ -11,7 +11,7 @@ import os
 
 import pandas as pd
 from q2_types.feature_data import SequenceCharacteristicsDirectoryFormat
-from rnanorm import CPM, CTF, CUF, FPKM, TMM, TPM, UQ
+#from rnanorm import CPM, CTF, CUF, FPKM, TMM, TPM, UQ
 
 
 def rarefy(table: biom.Table,
